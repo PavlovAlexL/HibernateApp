@@ -1,6 +1,6 @@
 package services;
 
-import dao.UserDao;
+import dao.UserDaoImpl;
 import models.Auto;
 import models.User;
 
@@ -11,7 +11,7 @@ import java.util.List;
  * Service — слой данных в приложении, отвечающий за выполнение бизнес-логики.
  *
  * Если ваша программа должна выполнить какую-то бизнес-логику — она делает это через сервисы.
- * Сервис содержит внутри себя UserDao, и в своих методах вызывает методы DAO.
+ * Сервис содержит внутри себя UserDaoImpl, и в своих методах вызывает методы DAO.
  * Это может показаться вам дублированием функций (почему бы просто не вызывать методы из dao-объекта),
  * но при большом количестве объектов и сложной логике разбиение приложения на слои дает огромные преимущества (это good practice,
  * запомните эту информацию на будущее и почитайте про "слои приложения").
@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class UserService {
 
-    private UserDao usersDao = new UserDao();
+    private UserDaoImpl usersDao = new UserDaoImpl();
 
     public UserService() {
     }

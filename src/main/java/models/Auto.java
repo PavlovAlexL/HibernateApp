@@ -13,7 +13,7 @@ public class Auto {
    @Column(name = "color")
    private String color;
 
-   //@ManyToOne многим Auto может соответствовать один User/
+   //@ManyToOne многим Auto может соответствовать один UserDao/
    //@JoinColumn указывает, через какой столбец в таблице autos происходит связь с таблицей users (тот самый внешний ключ)
 
    @ManyToOne(fetch = FetchType.LAZY)

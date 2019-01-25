@@ -61,7 +61,7 @@ public class User {
     }
     @Override
     public String toString() {
-        return "models.User{" +
+        return "models.UserDao{" +
                 "id=" + id +
                 ", age" + age +
                 '}';

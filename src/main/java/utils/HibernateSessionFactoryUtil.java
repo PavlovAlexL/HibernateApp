@@ -25,7 +25,7 @@ public class HibernateSessionFactoryUtil {
                 //configuration.setProperty("hibernate.connection.password", "mysql");
                 //configuration.setProperty("hibernate.show_sql", "true");
                 //configuration.configure();
-                Configuration configuration = new Configuration().configure();  //создаем новый объект конфигураций Configuration, и передаем ему те классы, которые он должен воспринимать как сущности — User и Auto.
+                Configuration configuration = new Configuration().configure();  //создаем новый объект конфигураций Configuration, и передаем ему те классы, которые он должен воспринимать как сущности — UserDao и Auto.
 
                 configuration.addAnnotatedClass(User.class);
                 configuration.addAnnotatedClass(Auto.class);
